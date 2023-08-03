@@ -1,0 +1,811 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  position: static;
+  width: 100%;
+  height: 41rem;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./../../assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+
+.homeSectionIntro,
+.homeSectionIntro * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.homeSectionIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  padding: 0 0 0 200px;
+  top: 200px;
+}
+
+.homeSectionText {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  line-height: 1.4;
+}
+
+.homeSectionText .welcomeText {
+  color: #ffffff;
+  text-align: left;
+  position: relative;
+  font-size: 3rem;
+  width: 984px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+}
+
+.homeSectionText .subText {
+  color: #ffffff;
+  text-align: left;
+  position: relative;
+  font-size: 1.4rem;
+  width: 745px;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+}
+
+.homeSectionButtonContainer {
+  background: var(--blue-500, #543ee0);
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 157px;
+  height: 56px;
+  position: relative;
+  border: none;
+}
+
+.get-started {
+  color: #ffffff;
+  text-align: left;
+  font: 700 18px/27px "DM Sans", sans-serif;
+  position: relative;
+}
+
+.aboutSectionIntro,
+.aboutSectionIntro * {
+  box-sizing: border-box;
+}
+
+.aboutSectionIntro {
+  display: flex;
+  flex-direction: row;
+  gap: 84px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1296px;
+  position: relative;
+  padding: 0 0 0 100px;
+  margin-top: 50px;
+}
+
+.aboutSectionContain {
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.aboutText {
+  color: #000000;
+  text-align: left;
+  position: relative;
+  font: 700 18px/28px "DM Sans", sans-serif;
+  font-size: 2.5rem;
+  top: 20px;
+  margin-bottom: 45px;
+  font-weight: 600;
+}
+
+.aboutSubText {
+  width: 656px;
+  gap: 20px;
+  line-height: 2;
+  position: relative;
+  font-family: "DM Sans", sans-serif;
+  color: #000000;
+  margin-top: 10%;
+  font-size: 1rem;
+}
+
+.aboutImg {
+  border-radius: 8px;
+  flex-shrink: 0;
+  width: 500px;
+  height: 404px;
+  position: relative;
+  margin-left: 100px;
+}
+
+.featureSection {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding: 0 0 0 0;
+  margin-top: 50px;
+}
+
+.featureSectionContain {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding: 0 0 0 0;
+  margin-top: 50px;
+}
+
+.featureSectionText {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.featureText {
+  color: #000000;
+  text-align: center;
+  position: relative;
+  font-size: 2.5rem;
+  width: 984px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+}
+
+.featureSubText {
+  color: #000000;
+  position: relative;
+  font-size: 1.2rem;
+  width: 70%;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+}
+
+.featureSectionBoxes {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding: 0 0 0 0;
+  margin-top: 10px;
+}
+
+.ellipse {
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  width: 92px;
+  height: 88px;
+  position: relative;
+}
+
+.featureBox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  width: 306px;
+  height: 324px;
+  background-color: #ffffff;
+  border: 2px solid #f2f2f2;
+  border-radius: 8px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.featureBoxText {
+  color: #000000;
+  font-size: 1.2rem;
+  width: 100%;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+}
+
+.featureBoxSubText {
+  color: #979393;
+  position: relative;
+  font-size: 1rem;
+  width: 100%;
+  font-weight: 300;
+  font-family: "DM Sans", sans-serif;
+}
+
+.joinSection {
+  background-color: rgba(255, 237, 204, 0.5);
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.joinSectionContain {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  left: 440px;
+  top: 93px;
+}
+
+.joinSectionText {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  margin-bottom: 24px;
+}
+.joinSubText {
+  color: #000000;
+  text-align: left;
+  font-family: "DM Sans", sans-serif;
+  width: 890px;
+  line-height: 1.4;
+}
+
+.nameText {
+  color: #000000;
+  text-align: left;
+  position: relative;
+}
+
+.name {
+  color: #000000;
+  font: var(--desktop-headline-3-24-36, 500 24px/26px "DM Sans", sans-serif);
+}
+
+.title {
+  color: #000000;
+  font: var(--desktop-headline-18-36, 400 18px/27px "DM Sans", sans-serif);
+}
+
+.joinSectionButtonContainer {
+  background-color: var(--blue-500, #543ee0);
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 157px;
+  height: 56px;
+  position: relative;
+  border: none;
+}
+
+.join {
+  color: #ffffff;
+  text-align: left;
+  font: 700 18px/27px "DM Sans", sans-serif;
+  position: relative;
+}
+
+.joinSectionImg {
+  border-radius: 50%;
+  width: 300px;
+  height: 292px;
+  position: relative;
+  left: calc(50% - 784px);
+  top: -140px;
+}
+
+.img {
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  left: 54px;
+  border-radius: 50%;
+}
+
+.getStartedSection,
+.getStartedSection * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.getStartedSection {
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  margin-top: 100px;
+}
+.getStartedInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 44px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  margin-right: 200px;
+}
+.frame-38 {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+.mask-group {
+  flex-shrink: 0;
+  width: 154px;
+  height: 158px;
+  position: static;
+}
+
+.rounded-1 {
+  width: 154px;
+  height: 154px;
+  position: absolute;
+  left: 0px;
+  top: -6px;
+  border-radius: 50%;
+}
+
+.rounded-2 {
+  border-radius: 50%;
+  width: 154px;
+  height: 154px;
+  position: absolute;
+  left: -7px;
+  top: 254px;
+}
+
+.rounded-3 {
+  border-radius: 50%;
+  width: 154px;
+  height: 154px;
+  position: absolute;
+  left: 190px;
+  top: 121px;
+}
+.frame-24 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-23 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.getStartedText {
+  color: var(--black-700, #111111);
+  text-align: left;
+  font: var(--desktop-headline-48-72, 700 48px/72px "DM Sans", sans-serif);
+  position: relative;
+  width: 655px;
+}
+.getStartedSubText {
+  color: var(--black-700, #111111);
+  text-align: left;
+  font: var(--desktop-body-18-27, 400 18px/27px "DM Sans", sans-serif);
+  position: relative;
+  width: 594px;
+}
+.getStartedButtonContainer {
+  background: var(--blue-500, #543ee0);
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 157px;
+  height: 56px;
+  position: relative;
+}
+.get-started {
+  color: #ffffff;
+  text-align: left;
+  font: 700 18px/27px "DM Sans", sans-serif;
+  position: relative;
+}
+
+.homeFooter {
+  background-color: rgba(255, 237, 204, 0.5);
+  color: "#000000";
+  padding-bottom: 30px;
+  width: 100%;
+  margin-top: 120px;
+}
+
+.footerLogo {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.footerLogoText {
+  color: var(--blue-500, #543ee0);
+  text-align: left;
+  font: var(--desktop-headline-48-72, 700 48px/72px "DM Sans", sans-serif);
+  left: 80px;
+  top: 72px;
+}
+
+.homeFooter .footerliHeader {
+  font-family: "Syne", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.homeFooter ul {
+  list-style: none;
+}
+.footerTable ul {
+  padding-left: 0;
+}
+.homeFooter .footerTable li {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  margin: 20px 0;
+}
+.homeFooter .footerTable {
+  display: flex;
+  justify-content: space-between;
+}
+.homeFooter .ul {
+  width: 20px;
+}
+.homeFooter h1 {
+  font-family: "Syne", sans-serif;
+}
+.footerInfo {
+  display: flex;
+}
+.footerInfo ul {
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+  font-size: 1.3rem;
+}
+.footerSocials,
+.footerTerms {
+  width: 50%;
+}
+ul.footerTerms {
+  justify-content: right;
+}
+
+.footer-container {
+  padding: 5rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media screen and (max-width: 1068px) {
+  .home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .homeSectionIntro {
+    padding: 0 0 0 20px;
+    top: 150px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+  }
+
+  .homeSectionText .welcomeText {
+    font-size: 2.4rem;
+    width: 100%;
+  }
+  .homeSectionText .subText {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .aboutSectionContain {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 0 0 0 0;
+    margin-top: 0;
+  }
+
+  .aboutSectionIntro {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 0 0 0 0;
+    margin-top: 20px;
+  }
+
+  .aboutText {
+    font-size: 2rem;
+    width: 80%;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding: 0 0 0 50px;
+  }
+
+  .aboutSubText {
+    width: 90%;
+    margin-top: 20;
+    margin-bottom: 0;
+    padding: 0 0 0 50px;
+  }
+
+  .aboutImg {
+    width: 80%;
+    height: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .featureBox {
+    width: 80%;
+    height: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .featureSectionText {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .featureSectionBoxes {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .featureText {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .featureSubText {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .featureBoxText {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .featureBoxSubText {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .joinSection {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+  }
+
+  .joinSectionContain {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    left: 0;
+    top: 60px;
+    padding: 20px;
+  }
+
+  .joinSectionText {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .joinSubText {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .nameText {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .joinSectionButtonContainer {
+    width: 50%;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .getStartedSection {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+  }
+
+  .frame-38 {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    margin-bottom: 100px;
+  }
+
+  .frame-24 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .frame-23 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .getStartedText {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .getStartedSubText {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .frame-5 {
+    width: 50%;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .get-started {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .homeFooter {
+    color: "#000000";
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .homeFooter .footerTable {
+    flex-direction: column;
+  }
+  .homeFooter .footerInfo {
+    flex-direction: column;
+  }
+  .footerSocials {
+    margin-bottom: 20px;
+  }
+  .footerTerms {
+    margin-top: 20px;
+  }
+  .homeFooter .footerTerms {
+    justify-content: center;
+    width: auto;
+  }
+}

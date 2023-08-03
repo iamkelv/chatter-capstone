@@ -1,0 +1,273 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbarLogo {
+  width: 30%;
+}
+
+.navbarLogoImg {
+  margin-left: 50px;
+  width: 70%;
+}
+
+.parent-nav {
+  display: flex;
+  background-color: #fff;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+
+.navbarLinks {
+  width: 60%;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+  transition: all 0.5s ease;
+}
+
+.navbarLinks.open {
+  display: block;
+  position: absolute;
+  top: 8%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.navbarLinks ul {
+  list-style-type: none;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.navbarLinks li:hover {
+  color: #00f;
+  transition: 0.5s;
+}
+
+.navbarLinks li {
+  opacity: 1;
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+
+.navbarLinks a {
+  text-decoration: none;
+  color: #000;
+}
+
+.authButtonsContainer {
+  width: 50%;
+  height: 56px;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.authButton {
+  width: 157px;
+  height: 56px;
+  padding: 8px 16px;
+  border: 0.5px #543ee0 solid;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background-color: #fff;
+}
+
+.authButton.signupButton {
+  background: #543ee0;
+  color: #fff;
+}
+
+.authButton:hover {
+  background-color: #543ee0;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.authButtonContent {
+  color: #111111;
+  font-size: 18px;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  line-height: 27px;
+  word-wrap: break-word;
+}
+
+.authButton.signupButton .authButtonContent {
+  color: white;
+}
+
+.hideOnLoggedIn {
+  display: none;
+}
+
+.profileCircle img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown {
+  color: #000;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+  position: absolute;
+  top: 90px;
+  right: 150px;
+  width: 250px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.dropdown .box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+.dropdownIcon {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbarLinks {
+    position: fixed;
+    background: #5b78c7;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .navbarLinks li a {
+    font-size: 20px;
+  }
+
+  .navbarLinks li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .navbarLinks li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .navbarLinks li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+
+  .navbarLinks.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .navbarLinks ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 100px;
+    padding: 20px;
+    position: relative;
+  }
+
+  .navbarLinks li {
+    opacity: 0;
+  }
+
+  .authButtonsContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 24px;
+  }
+
+  .navbarLogoImg {
+    margin-left: 10px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .navbarLinks li {
+    opacity: 0;
+  }
+
+  .navbarLinks li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .navbarLinks li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .navbarLinks li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+
+  .navbarLinks li {
+    opacity: 1;
+  }
+
+  .navbarBtn {
+    width: 100%;
+    background-color: #843ab3;
+    color: #fff;
+    transition: 0.5s;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.3rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    top: 400px;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all 1s ease-out;
+  }
+  .profileCircle img {
+    margin-right: 390px;
+    margin-top: -70px;
+  }
+}
