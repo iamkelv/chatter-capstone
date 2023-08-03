@@ -1,0 +1,113 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.imgContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.imgContainer img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.blogContent {
+  margin-bottom: 20px;
+}
+
+.blogContent h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.commentSection {
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.commentSection h2 {
+  margin-bottom: 10px;
+}
+
+.commentSection p {
+  margin: 0;
+}
+
+.commentSection ul {
+  list-style: none;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.commentSection li {
+  margin-bottom: 10px;
+}
+
+.leaveCommentSection {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.leaveCommentSection h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.leaveCommentSection form {
+  margin-top: 20px;
+  width: 900px;
+}
+
+.leaveCommentSection label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.leaveCommentSection input,
+.leaveCommentSection textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.leaveCommentSection button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.leaveCommentSection button:hover {
+  background-color: #0056b3;
+}
+
+.loader {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1068px) {
+  .leaveCommentSection form {
+    width: 350px;
+  }
+}
